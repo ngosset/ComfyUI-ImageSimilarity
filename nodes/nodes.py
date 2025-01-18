@@ -67,8 +67,8 @@ class ImageSimilarity:
         image_2_resized = prepare_image_for_resnet(image_2)
         
         with torch.no_grad():
-            embedding_1 = model(image_1_resized.to('cuda')).squeeze().flatten()
-            embedding_2 = model(image_2_resized.to('cuda')).squeeze().flatten()
+            embedding_1 = model(image_1_resized.to(self.device)).squeeze().flatten()
+            embedding_2 = model(image_2_resized.to(self.device)).squeeze().flatten()
             
             cos_val = torch.nn.functional.cosine_similarity(embedding_1.unsqueeze(0),
                                                         embedding_2.unsqueeze(0),
