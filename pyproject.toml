@@ -1,0 +1,14 @@
+[project]
+name = "imagesimilarity"
+description = "This node allows you to compare two images and determine their visual similarity using deep learning features extracted from ResNet models. It outputs both a boolean indicating if the images are similar (based on a threshold) and the actual cosine similarity score."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/ngosset/ComfyUI-ImageSimilarity"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-ImageSimilarity"
+Icon = ""
