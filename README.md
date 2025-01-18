@@ -19,7 +19,7 @@ This node allows you to compare two images and determine their visual similarity
 2. Clone this repository into the `custom_nodes` folder:
 ```bash
 cd custom_nodes
-git clone [repository-url]
+git clone https://github.com/ngosset/ComfyUI-ImageSimilarity.git
 ```
 
 ## Usage
@@ -43,17 +43,11 @@ Outputs:
 3. Cosine similarity is calculated between the embeddings
 4. Returns both the raw similarity score and a thresholded boolean result
 
-## Example Workflow
-
-[Add screenshot/example of the node being used in ComfyUI]
-
-## Examples
+## Screenshots
 
 ![Example 1](screenshots/screenshot1.png)
-*Screenshot of Example Workflow*
 
 ![Example 2](screenshots/screenshot2.png)
-*Screenshot of Example Workflow*
 
 ## License
 
